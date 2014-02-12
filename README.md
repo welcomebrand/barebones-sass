@@ -20,8 +20,9 @@ Barebones makes no markup or layout choices for you like other frameworks and th
 Copy the folder "sass-barebones" into your /wp-content/themes/ folder on your WordPress install and tell your Sass compiler/watcher to watch the sass-barebones folder for updates so your SCSS compiles properly.
 
 ####Help and Support
-Please direct any support questions to codecanyon@welcomebrand.co.uk and I'll be happy to help out as best I can.
+Please direct any post any support questions or indeed ways this can be improved and I'll be happy to help out as best I can.
 
 Thanks
 
 James.
+@welcomebrand
