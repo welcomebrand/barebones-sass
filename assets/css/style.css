@@ -1,0 +1,350 @@
+/*!
+Theme Name: Barebones
+Description: A Sass build of the Barebones WordPress base theme.
+Author: James Young (@welcomebrand)
+Author URI: http://welcomebrand.co.uk;
+Version: 1.0
+*/
+/*
+
+    GLOBAL RESETS
+    =============
+
+    Standard reset styles and a few extra bits and pieces including
+    setting border-box on all elements.
+
+*/
+/* line 12, ../sass/globals/_reset.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+ins, mark {
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+mark {
+  display: inline-block;
+  padding: .1em;
+  text-shadow: none;
+  background: #f2d3a9;
+  color: #a93901;
+  border-radius: 2px;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+::-moz-selection, ::-webkit-selection, ::selection {
+  text-shadow: none;
+  background: #333;
+  color: #fff;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 12, ../sass/globals/_reset.scss */
+[type=submit] {
+  cursor: pointer;
+}
+
+/* line 14, ../sass/globals/_reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+
+    MIXINS AND VARIABLES
+    ====================
+
+    All mixins and variables live here. Where possible, please include
+    a source link if they're written by someone else along with an
+    indication of how they should be used in the css files.
+
+*/
+/* Colour Palette */
+/* REM Font sizing - http://blog.divshot.com/post/29552945105/useful-sass-mixins-for-responsive-design-font-sizing */
+/* Define Media Queries - http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/ */
+/* Hover animation */
+/* Gradient */
+/* Clearfix http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/ */
+/* Visually hide element http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/ */
+/*
+	If we use Google fonts, import it here. Don't include the http bit then it's safe across secure too
+	@import url(//fonts.googleapis.com/css?family=Paytone+One|Roboto:400,400italic,700,700italic,900,500italic,500);
+*/
+/* line 6, ../sass/globals/_typography.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 10, ../sass/globals/_typography.scss */
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* line 14, ../sass/globals/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 24px;
+  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+/* line 28, ../sass/globals/_typography.scss */
+a {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+/* line 32, ../sass/globals/_typography.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 37, ../sass/globals/_typography.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 41, ../sass/globals/_typography.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 45, ../sass/globals/_typography.scss */
+.small {
+  font-size: 12px;
+  line-height: 20px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+/* line 49, ../sass/globals/_typography.scss */
+pre, code {
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+}
+
+/*
+
+    GENEAL FORM STUFF
+    =================
+
+    This is more reset based stuff, if you've got a specific form, it would be
+    best to create it as a partial scss file and import it to screen.scss
+
+*/
+/* line 11, ../sass/globals/_forms.scss */
+form {
+  margin: 0;
+}
+
+/* line 15, ../sass/globals/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 21, ../sass/globals/_forms.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 31, ../sass/globals/_forms.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 39, ../sass/globals/_forms.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 46, ../sass/globals/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 53, ../sass/globals/_forms.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 58, ../sass/globals/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 65, ../sass/globals/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 73, ../sass/globals/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 78, ../sass/globals/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 83, ../sass/globals/_forms.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/*
+
+    SITEWIDE LAYOUT ELEMENTS
+    ========================
+
+    Top level layout elements go in here, if you're building a module or page
+    element of some sort, split it out into its own scss file and update
+    styles.scss to import it.
+
+*/
+/* line 12, ../sass/partials/_layout.scss */
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  background: red;
+}
+
+/* line 19, ../sass/partials/_layout.scss */
+ul, ol {
+  margin: 0 0 1.5em 1.5em;
+}
+
+/* line 25, ../sass/partials/_layout.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+/* line 31, ../sass/partials/_layout.scss */
+img,
+a img {
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  min-height: auto;
+  vertical-align: middle;
+}

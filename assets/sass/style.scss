@@ -1,0 +1,21 @@
+/*!
+Theme Name: Barebones
+Description: A Sass build of the Barebones WordPress base theme.
+Author: James Young (@welcomebrand)
+Author URI: http://welcomebrand.co.uk;
+Version: 1.0
+*/
+
+@import
+	// "globals/debug",
+
+	"globals/reset",
+	"globals/settings",
+	"globals/typography",
+    "globals/misc",
+    "globals/forms",
+
+    "pages/single",
+    "pages/page",
+
+    "partials/layout";

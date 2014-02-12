@@ -1,0 +1,66 @@
+/*
+	NOTE: If you use Google fonts, import it here. Don't include the http bit then it's safe across secure too
+	@import url(//fonts.googleapis.com/css?family=Paytone+One;
+*/
+
+/*
+Font weights set as variables because sometimes there are multiple weights,
+so an example use might also be a variable of $mid-weight: 500;
+If you've just got normal and bold, you don't need the variable.
+*/
+$normal: normal;
+$bold: bold;
+
+html {
+    font-size: 100%;
+    }
+
+body {
+    @include font-size(1,1.5);
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	@include font-size(1.5, 1.75);
+	}
+
+    h2 {}
+    h3 {}
+    h4 {}
+    h5 {}
+    h6 {}
+
+p {
+
+	}
+
+a {
+	@include hover-fade;
+
+	&:hover,
+    &:active {
+        outline: 0;
+		}
+	}
+
+a:focus {
+    outline: thin dotted;
+    }
+
+strong, b {
+	font-weight: $bold;
+	}
+
+.small {
+	@include font-size(.75, 1.25);
+	}
+
+pre, code {
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+	}
+
+blockquote {
+
+    cite {
+
+        }
+    }
