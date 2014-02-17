@@ -26,23 +26,23 @@ $white: #fff;
 /* Define Media Queries - http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/ */
 // Use: @include bp-s {};
 @mixin bp-s {
-    @media only screen and (max-width: 30em) { @content; }
+    @media only screen and (min-width: 30em) { @content; }
     }
 
 @mixin bp-m {
-    @media only screen and (max-width: 37.5em) { @content; }
+    @media only screen and (min-width: 37.5em) { @content; }
     }
 
 @mixin bp-l {
-    @media only screen and (max-width: 48em) { @content; }
+    @media only screen and (min-width: 48em) { @content; }
     }
 
 @mixin bp-xl {
-    @media only screen and (max-width: 64em) { @content; }
+    @media only screen and (min-width: 64em) { @content; }
     }
 
 @mixin bp-xxl {
-    @media only screen and (max-width: 78.75em) { @content; }
+    @media only screen and (min-width: 78.75em) { @content; }
     }
 
 /* Hover animation */
