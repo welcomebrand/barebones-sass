@@ -14,9 +14,9 @@
     <script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo bloginfo('template_directory'); ?>/assets/scripts/jquery-2.0.3.min.js"%3E%3C/script%3E'))</script>
 
     <!--
-    General.js is a file for storing sitewide bits and pieces of Javascript,
+    Scripts.min.js is a file for storing sitewide bits and pieces of Javascript,
     if you don't need it, simply delete it.
-    <script src="<?php echo bloginfo('template_directory'); ?>/assets/scripts/general.js"></script>
+    <script src="<?php echo bloginfo('template_directory'); ?>/assets/scripts/scripts.min.js"></script>
     -->
 
 <!-- Scripts -->

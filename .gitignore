@@ -19,3 +19,10 @@ CVS
 
 # sass noise
 /.sass-cache
+
+# node noise
+node_modules
+
+# Compiled items
+scripts.min.js
+style.css
