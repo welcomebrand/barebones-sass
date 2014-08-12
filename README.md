@@ -17,7 +17,15 @@ Barebones makes no markup or layout choices for you like other frameworks and th
 
 ###Getting up and running
 
-Copy the folder "sass-barebones" into your /wp-content/themes/ folder on your WordPress install and tell your Sass compiler/watcher to watch the sass-barebones folder for updates so your SCSS compiles properly.
+Copy the folder "sass-barebones" into your /wp-content/themes/ folder on your WordPress install. Make sure Node and Gulp are installed on your machine.  Then run the following command in your project directory to load project dependencies:
+
+    npm install
+
+After the installer finishes, you can tell Gulp to watch your files with the following command:
+
+    gulp watch
+
+Gulp is pre-configured in this project to compile your Sass, concatenate and minify your Javascript, and optimize your images whenever changes are sensed in the corresponding files.  For more information on getting set up with Gulp, see <http://travismaynard.com/writing/getting-started-with-gulp>
 
 ####Help and Support
 Please direct any post any support questions or indeed ways this can be improved and I'll be happy to help out as best I can.
