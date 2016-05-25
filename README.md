@@ -1,3 +1,9 @@
+***Please note: I no longer actively support this theme*** 
+You are more than welcome to continue using it and making changes if you wish but due to time commitments and general lack of WordPress use in my current work it's not something I can help with if any issues arise. 
+
+Thanks! 
+
+
 #Barebones WordPress Developer Base Theme - Sass Edition
 
 Thank you for choosing to use Barebones, a completely stripped down "starter theme" for WordPress designers and developers.
