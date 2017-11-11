@@ -38,7 +38,8 @@
 
 <!-- Load scripts quick smart -->
 
-	<?php wp_deregister_script('jquery');wp_head(); ?>
+ 	<?php //wp_deregister_script('jquery');wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> id="top">
